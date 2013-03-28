@@ -22,6 +22,7 @@ header nav {
     text-align: center;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 header nav > a {
     border-bottom: 1px solid #777;
@@ -36,8 +37,6 @@ header nav > a {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 	background-image: -webkit-linear-gradient(#4c4c4c, #222);
-	background-image:    -moz-linear-gradient(#4c4c4c, #222);
-	background-image:     -ms-linear-gradient(#4c4c4c, #222);
 	background-image:         linear-gradient(#4c4c4c, #222);
 }
 header nav > a:hover,
@@ -56,3 +55,35 @@ header nav > a.active {
 
 /*** COMMON PAGE ***/
 
+.common .content {margin-top: 2em;}
+.common .control h3 {font-weight: bold; margin-bottom: 5px; font-size: 15px;}
+.common .control > section {
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.common .buttons > div {margin-top: 10px;}
+.common .btn {
+    border: 2px solid #555; 
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 3px;
+}
+.common .btn.active {
+    background-color: #ccc; 
+    border-color: #333;
+}
+.common .item {
+    margin: 1.5em auto;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #222;
+    padding: 1em 0;
+}
+.common .item.round-borders {border-radius: 1em;}
+.common .item.shadow {box-shadow: 5px 5px 12px #333;}
+.common .item.text-shadow {text-shadow: 1px 1px 2px #000, 0 0 7px #f00; color: #fff;}
+.common .item.opacity {opacity: 0.7;}
+.common .item.box-sizing {box-sizing: border-box; -moz-box-sizing: border-box;}
