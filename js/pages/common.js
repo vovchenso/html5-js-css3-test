@@ -37,6 +37,16 @@ APP.PAGES.common = (function() {
                 }
             });
         }
+        
+        var bgs = APP.DOM.queryAll('button.bg-btn');
+        for (var btn in bgs) {
+            bgs[btn].addEventListener('click', function() {
+                var cls = this.getAttribute('data-class');
+                
+                this.classList.toggle('active');
+                APP.DOM.get('common-content').classList.toggle(cls);
+            });
+        }
     };
     
     var _init = function() {

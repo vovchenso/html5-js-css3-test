@@ -58,32 +58,58 @@ header nav > a.active {
 .common .content {margin-top: 2em;}
 .common .control h3 {font-weight: bold; margin-bottom: 5px; font-size: 15px;}
 .common .control > section {
-    margin: 5px;
+    margin: 5px 0;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
 .common .buttons > div {margin-top: 10px;}
-.common .btn {
+.common .btn, .common .bg-btn {
     border: 2px solid #555; 
     background-color: #eee;
     border-radius: 3px;
     padding: 3px;
 }
-.common .btn.active {
+.common .btn.active, .common .bg-btn.active {
     background-color: #ccc; 
     border-color: #333;
 }
 .common .item {
-    margin: 1.5em auto;
+    margin: 2em auto;
     width: 90%;
     text-align: center;
     border: 1px solid #222;
     padding: 1em 0;
+    background-color: #ddd;
 }
 .common .item.round-borders {border-radius: 1em;}
 .common .item.shadow {box-shadow: 5px 5px 12px #333;}
 .common .item.text-shadow {text-shadow: 1px 1px 2px #000, 0 0 7px #f00; color: #fff;}
 .common .item.opacity {opacity: 0.7;}
 .common .item.box-sizing {box-sizing: border-box; -moz-box-sizing: border-box;}
+.common .item.icons {position: relative;}
+.common .item.icons .icon {
+    background: url('../img/alert.png') no-repeat;
+    height: 30px;
+    left: 13px;
+    position: absolute;
+    top: 7px;
+    width: 33px;
+}
+
+.common .item.bg-gradient {
+	background-image: -webkit-linear-gradient(#eee, #444);
+	background-image:         linear-gradient(#eee, #444);
+}
+.common .item.bg-rgba {background-color: rgba(0, 0, 0, 0.5);}
+.common .item.bg-image {background: url('../img/bg.png') repeat-x center center;}
+.common .item.bg-size {background-size: 70% 80%;}
+
+.common .content.gradient {
+    background-image: -webkit-linear-gradient(#fff 0%, #c9de96 20%,#8ab66b 44%, #398235 100%); 
+    background-image: linear-gradient(#fff 0%, #c9de96 20%, #8ab66b 44%, #398235 100%);
+}
+.common .content.image {
+    
+}
