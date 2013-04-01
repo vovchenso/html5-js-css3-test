@@ -20,13 +20,18 @@ APP.PAGES.common = (function() {
     };
     
     var _handlers = function() {
-        APP.DOM.get('number').addEventListener('change', function() {
-            APP.DOM.get('number-text').innerHTML = this.value;
+        APP.DOM.get('range').addEventListener('change', function() {
+            APP.DOM.get('number').value = this.value;
             _createElements(this.value);
         });
         
-        var btns = APP.DOM.queryAll('button.btn');
-        for (var btn in btns) {
+        APP.DOM.get('number').addEventListener('change', function() {
+            APP.DOM.get('range').value = this.value;
+            _createElements(this.value);
+        });
+        
+        var btn, btns = APP.DOM.queryAll('button.btn');
+        for (btn in btns) {
             btns[btn].addEventListener('click', function() {
                 this.classList.toggle('active');
                 
@@ -39,7 +44,7 @@ APP.PAGES.common = (function() {
         }
         
         var bgs = APP.DOM.queryAll('button.bg-btn');
-        for (var btn in bgs) {
+        for (btn in bgs) {
             bgs[btn].addEventListener('click', function() {
                 var cls = this.getAttribute('data-class');
                 

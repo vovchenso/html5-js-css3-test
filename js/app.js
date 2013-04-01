@@ -121,8 +121,10 @@ APP.PAGE = (function() {
         var httpRequest = new XMLHttpRequest();
         
         spinner.classList.remove('hidden');
+        
+        var url = 'pages/' + name + '.html?' + (new Date).getTime();
 
-        httpRequest.open('GET', 'pages/' + name + '.html');
+        httpRequest.open('GET', url);
         httpRequest.send();
         httpRequest.onreadystatechange = function() {
             if (httpRequest.readyState === 4) {
