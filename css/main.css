@@ -52,6 +52,41 @@ header nav > a.active {
 
 #main {padding-top: 40px;}
 
+.bg-btn {
+    background-color: #759ae9;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+    background-image: -webkit-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+    background-image: -moz-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+    background-image: linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+    border-top: 1px solid #1f58cc;
+    border-right: 1px solid #1b4db3;
+    border-bottom: 1px solid #174299;
+    border-left: 1px solid #1b4db3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+    box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+    color: #fff;
+    font: bold 12px/1 "helvetica neue", helvetica, arial, sans-serif;
+    padding: 7px 0;
+    text-shadow: 0 -1px 1px #1a5ad9;
+    width: 20%; 
+}
+.bg-btn:hover {
+    background-color: #5d89e8;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
+    background-image: -webkit-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+    background-image: -moz-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+    background-image: linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+    cursor: pointer; }
+.bg-btn:active, .bg-btn.active {
+    border-top: 1px solid #1b4db3;
+    border-right: 1px solid #174299;
+    border-bottom: 1px solid #133780;
+    border-left: 1px solid #174299;
+    -webkit-box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee;
+    box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee; 
+}
+
 
 /*** COMMON PAGE ***/
 
@@ -123,50 +158,21 @@ header nav > a.active {
     box-shadow: inset 0 0 8px 4px #548c29, 0 1px 0 0 #eeeeee;
 }
 
-.common .bg-btn {
-    background-color: #759ae9;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
-    background-image: -webkit-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
-    background-image: -moz-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
-    background-image: linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
-    border-top: 1px solid #1f58cc;
-    border-right: 1px solid #1b4db3;
-    border-bottom: 1px solid #174299;
-    border-left: 1px solid #1b4db3;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
-    box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
-    color: #fff;
-    font: bold 12px/1 "helvetica neue", helvetica, arial, sans-serif;
-    padding: 7px 0;
-    text-shadow: 0 -1px 1px #1a5ad9;
-    width: 20%; 
-}
-.common .bg-btn:hover {
-    background-color: #5d89e8;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
-    background-image: -webkit-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
-    background-image: -moz-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
-    background-image: linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
-    cursor: pointer; }
-.common .bg-btn:active, .common .bg-btn.active {
-    border-top: 1px solid #1b4db3;
-    border-right: 1px solid #174299;
-    border-bottom: 1px solid #133780;
-    border-left: 1px solid #174299;
-    -webkit-box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee;
-    box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee; 
-}
-
-  .common .item {
+.common .item {
     margin: 2em auto;
+    color: #372b1c;
     width: 90%;
     text-align: center;
-    border: 1px solid #222;
     padding: 1em 0;
     background-color: #ddd;
 }
+.common .item.borders {border: 1px solid #5e9e2e;}
 .common .item.round-borders {border-radius: 1em;}
+.common .item.border-image {
+    border-style: solid;
+    border-width: 4px;
+    border-image: url(../img/border.png) 6 repeat repeat;
+}
 .common .item.shadow {box-shadow: 5px 5px 12px #333;}
 .common .item.text-shadow {text-shadow: 1px 1px 2px #000, 0 0 7px #f00; color: #fff;}
 .common .item.opacity {opacity: 0.7;}
@@ -182,17 +188,23 @@ header nav > a.active {
 }
 
 .common .item.bg-gradient {
-	background-image: -webkit-linear-gradient(#eee, #444);
-	background-image:         linear-gradient(#eee, #444);
+	background-image: -webkit-linear-gradient(#628500, #96d21c);
+    background-image:         linear-gradient(#628500, #96d21c);
 }
 .common .item.bg-rgba {background-color: rgba(0, 0, 0, 0.5);}
-.common .item.bg-image {background: url('../img/bg.png') repeat-x center center;}
+.common .item.bg-image {background: url('../img/bg-item.png') repeat-x 0 52%;}
 .common .item.bg-size {background-size: 70% 80%;}
 
 .common .content.gradient {
     background-image: -webkit-linear-gradient(#fff 0%, #c9de96 20%,#8ab66b 44%, #398235 100%); 
     background-image: linear-gradient(#fff 0%, #c9de96 20%, #8ab66b 44%, #398235 100%);
 }
-.common .content.image {
-    
-}
+.common .content.image {background: url('../img/bg.png') repeat;}
+.common .content.rgba {background-color: rgba(232, 226, 215, 0.5);}
+.common .content.bg-size {background-size: 50% 50%;}
+
+
+/*** ANIMATION PAGE ***/
+.animation .buttons {margin-top: 10px; text-align: center;}
+.animation .buttons .bg-btn {width: 48%;}
+.animation .buttons .bg-btn + .bg-btn {margin-left: 1%;}
